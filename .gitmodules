@@ -1,0 +1,3 @@
+[submodule "PosterMngment"]
+	path = PosterMngment
+	url = https://github.com/vaishnavrampure/posterMangemnet

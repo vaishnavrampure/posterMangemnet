@@ -46,7 +46,7 @@ const LoginScreen = () => {
                     <Form.Label>Username </Form.Label>
                     <Form.Control
                         type='username'
-                        placeholder='Enter username'
+                        placeholder='Enter vaiishnav'
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                     ></Form.Control>

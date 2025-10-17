@@ -49,7 +49,7 @@ const HomeScreen = () => {
       ) : (
         <Row style={{ ...styles.rowCenter, textAlign: 'center' }}>
           <Col md={8}>
-            <h1 style={styles.welcomeHeader}>Welcome to Testings phase</h1>
+            <h1 style={styles.welcomeHeader}>Welcome to PosterPulse</h1>
             <Link to="/login">Login</Link> or <Link to="/signup">Sign up</Link>
           </Col>
         </Row>

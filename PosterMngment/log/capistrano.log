@@ -1111,3 +1111,269 @@ npm error enoent
   INFO [7bb45661] Running /usr/bin/env echo "Branch main (at c8cc2d674d6d74cf96822c3cb5bb249599199cc5) deployed as release 20251016161403 by vaishnavrampure" >> /home/ec2-user/posterMangemnet/revisions.log as ec2-user@34.204.60.121
  DEBUG [7bb45661] Command: cd /home/ec2-user/posterMangemnet/releases && /usr/bin/env echo "Branch main (at c8cc2d674d6d74cf96822c3cb5bb249599199cc5) deployed as release 20251016161403 by vaishnavrampure" >> /home/ec2-user/posterMangemnet/revisions.log
   INFO [7bb45661] Finished in 0.502 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2025-10-17 12:18:53 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [87654856] Running /usr/bin/env mkdir -p /tmp as ec2-user@34.204.60.121
+ DEBUG [87654856] Command: /usr/bin/env mkdir -p /tmp
+  INFO [87654856] Finished in 1.235 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-75959e9d047212093763.sh 0.0%
+  INFO Uploading /tmp/git-ssh-75959e9d047212093763.sh 100.0%
+  INFO [9608d1ad] Running /usr/bin/env chmod 700 /tmp/git-ssh-75959e9d047212093763.sh as ec2-user@34.204.60.121
+ DEBUG [9608d1ad] Command: /usr/bin/env chmod 700 /tmp/git-ssh-75959e9d047212093763.sh
+  INFO [9608d1ad] Finished in 0.374 seconds with exit status 0 (successful).
+  INFO [99abde1f] Running /usr/bin/env git ls-remote https://github.com/vaishnavrampure/posterMangemnet.git HEAD as ec2-user@34.204.60.121
+ DEBUG [99abde1f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-75959e9d047212093763.sh" ; /usr/bin/env git ls-remote https://github.com/vaishnavrampure/posterMangemnet.git HEAD )
+ DEBUG [99abde1f] 	65fe6925852b7bbea7a3aec4dba96424e86bbbb2	HEAD
+  INFO [99abde1f] Finished in 0.509 seconds with exit status 0 (successful).
+  INFO [4051031d] Running /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/shared /home/ec2-user/posterMangemnet/releases as ec2-user@34.204.60.121
+ DEBUG [4051031d] Command: /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/shared /home/ec2-user/posterMangemnet/releases
+  INFO [4051031d] Finished in 0.524 seconds with exit status 0 (successful).
+  INFO [60eeb1f4] Running /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/shared/node_modules /home/ec2-user/posterMangemnet/shared/frontend/node_modules as ec2-user@34.204.60.121
+ DEBUG [60eeb1f4] Command: /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/shared/node_modules /home/ec2-user/posterMangemnet/shared/frontend/node_modules
+  INFO [60eeb1f4] Finished in 0.720 seconds with exit status 0 (successful).
+ DEBUG [5caa7992] Running [ -f /home/ec2-user/posterMangemnet/current/REVISION ] as ec2-user@34.204.60.121
+ DEBUG [5caa7992] Command: [ -f /home/ec2-user/posterMangemnet/current/REVISION ]
+ DEBUG [5caa7992] Finished in 0.849 seconds with exit status 0 (successful).
+ DEBUG [33ab0c30] Running /usr/bin/env cat /home/ec2-user/posterMangemnet/current/REVISION 2>/dev/null as ec2-user@34.204.60.121
+ DEBUG [33ab0c30] Command: /usr/bin/env cat /home/ec2-user/posterMangemnet/current/REVISION 2>/dev/null
+ DEBUG [33ab0c30] 	c8cc2d674d6d74cf96822c3cb5bb249599199cc5
+ DEBUG [33ab0c30] Finished in 0.527 seconds with exit status 0 (successful).
+ DEBUG [d2df23e3] Running [ -f /home/ec2-user/posterMangemnet/current/REVISION_TIME ] as ec2-user@34.204.60.121
+ DEBUG [d2df23e3] Command: [ -f /home/ec2-user/posterMangemnet/current/REVISION_TIME ]
+ DEBUG [d2df23e3] Finished in 0.392 seconds with exit status 0 (successful).
+ DEBUG [396133d5] Running /usr/bin/env cat /home/ec2-user/posterMangemnet/current/REVISION_TIME 2>/dev/null as ec2-user@34.204.60.121
+ DEBUG [396133d5] Command: /usr/bin/env cat /home/ec2-user/posterMangemnet/current/REVISION_TIME 2>/dev/null
+ DEBUG [396133d5] 	1760631227
+ DEBUG [396133d5] Finished in 0.424 seconds with exit status 0 (successful).
+ DEBUG [bb284fc5] Running [ -f /home/ec2-user/posterMangemnet/repo/HEAD ] as ec2-user@34.204.60.121
+ DEBUG [bb284fc5] Command: [ -f /home/ec2-user/posterMangemnet/repo/HEAD ]
+ DEBUG [bb284fc5] Finished in 0.520 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ec2-user/posterMangemnet/repo
+ DEBUG [37c64ba3] Running if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [37c64ba3] Command: if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi
+ DEBUG [37c64ba3] Finished in 0.510 seconds with exit status 0 (successful).
+  INFO [a6798b93] Running /usr/bin/env git remote set-url origin https://github.com/vaishnavrampure/posterMangemnet.git as ec2-user@34.204.60.121
+ DEBUG [a6798b93] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-75959e9d047212093763.sh" ; /usr/bin/env git remote set-url origin https://github.com/vaishnavrampure/posterMangemnet.git )
+  INFO [a6798b93] Finished in 0.639 seconds with exit status 0 (successful).
+  INFO [f15e999f] Running /usr/bin/env git remote update --prune as ec2-user@34.204.60.121
+ DEBUG [f15e999f] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-75959e9d047212093763.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f15e999f] 	From https://github.com/vaishnavrampure/posterMangemnet
+   c8cc2d6..65fe692  main       -> main
+  INFO [f15e999f] Finished in 0.907 seconds with exit status 0 (successful).
+ DEBUG [1905c029] Running if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [1905c029] Command: if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi
+ DEBUG [1905c029] Finished in 0.516 seconds with exit status 0 (successful).
+  INFO [e730adf1] Running /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/releases/20251017171859 as ec2-user@34.204.60.121
+ DEBUG [e730adf1] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-75959e9d047212093763.sh" ; /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/releases/20251017171859 )
+  INFO [e730adf1] Finished in 0.656 seconds with exit status 0 (successful).
+  INFO [2a991d49] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ec2-user/posterMangemnet/releases/20251017171859 as ec2-user@34.204.60.121
+ DEBUG [2a991d49] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-75959e9d047212093763.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ec2-user/posterMangemnet/releases/20251017171859 )
+  INFO [2a991d49] Finished in 0.649 seconds with exit status 0 (successful).
+ DEBUG [73384550] Running if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [73384550] Command: if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi
+ DEBUG [73384550] Finished in 0.394 seconds with exit status 0 (successful).
+ DEBUG [94073fbb] Running /usr/bin/env git rev-list --max-count=1 main as ec2-user@34.204.60.121
+ DEBUG [94073fbb] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-75959e9d047212093763.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [94073fbb] 	65fe6925852b7bbea7a3aec4dba96424e86bbbb2
+ DEBUG [94073fbb] Finished in 0.419 seconds with exit status 0 (successful).
+ DEBUG [87bdd33d] Running if test ! -d /home/ec2-user/posterMangemnet/releases/20251017171859; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases/20251017171859'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [87bdd33d] Command: if test ! -d /home/ec2-user/posterMangemnet/releases/20251017171859; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases/20251017171859'" 1>&2; false; fi
+ DEBUG [87bdd33d] Finished in 0.524 seconds with exit status 0 (successful).
+  INFO [aa5c9998] Running /usr/bin/env echo "65fe6925852b7bbea7a3aec4dba96424e86bbbb2" > REVISION as ec2-user@34.204.60.121
+ DEBUG [aa5c9998] Command: cd /home/ec2-user/posterMangemnet/releases/20251017171859 && /usr/bin/env echo "65fe6925852b7bbea7a3aec4dba96424e86bbbb2" > REVISION
+  INFO [aa5c9998] Finished in 0.401 seconds with exit status 0 (successful).
+ DEBUG [5dcaed2f] Running if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [5dcaed2f] Command: if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi
+ DEBUG [5dcaed2f] Finished in 0.554 seconds with exit status 0 (successful).
+ DEBUG [24883e5e] Running /usr/bin/env git --no-pager log -1 --pretty=format:"%ct" main as ec2-user@34.204.60.121
+ DEBUG [24883e5e] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-75959e9d047212093763.sh" ; /usr/bin/env git --no-pager log -1 --pretty=format:"%ct" main )
+ DEBUG [24883e5e] 	1760721274
+ DEBUG [24883e5e] Finished in 0.526 seconds with exit status 0 (successful).
+ DEBUG [8589287a] Running if test ! -d /home/ec2-user/posterMangemnet/releases/20251017171859; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases/20251017171859'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [8589287a] Command: if test ! -d /home/ec2-user/posterMangemnet/releases/20251017171859; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases/20251017171859'" 1>&2; false; fi
+ DEBUG [8589287a] Finished in 0.587 seconds with exit status 0 (successful).
+  INFO [c979e7d0] Running /usr/bin/env echo "1760721274" > REVISION_TIME as ec2-user@34.204.60.121
+ DEBUG [c979e7d0] Command: cd /home/ec2-user/posterMangemnet/releases/20251017171859 && /usr/bin/env echo "1760721274" > REVISION_TIME
+  INFO [c979e7d0] Finished in 0.536 seconds with exit status 0 (successful).
+  INFO [58ce35e3] Running /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/releases/20251017171859 /home/ec2-user/posterMangemnet/releases/20251017171859/frontend as ec2-user@34.204.60.121
+ DEBUG [58ce35e3] Command: /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/releases/20251017171859 /home/ec2-user/posterMangemnet/releases/20251017171859/frontend
+  INFO [58ce35e3] Finished in 0.544 seconds with exit status 0 (successful).
+ DEBUG [0c5091ba] Running [ -L /home/ec2-user/posterMangemnet/releases/20251017171859/node_modules ] as ec2-user@34.204.60.121
+ DEBUG [0c5091ba] Command: [ -L /home/ec2-user/posterMangemnet/releases/20251017171859/node_modules ]
+ DEBUG [0c5091ba] Finished in 0.381 seconds with exit status 1 (failed).
+ DEBUG [ed136fe0] Running [ -d /home/ec2-user/posterMangemnet/releases/20251017171859/node_modules ] as ec2-user@34.204.60.121
+ DEBUG [ed136fe0] Command: [ -d /home/ec2-user/posterMangemnet/releases/20251017171859/node_modules ]
+ DEBUG [ed136fe0] Finished in 0.372 seconds with exit status 1 (failed).
+  INFO [fb9a1139] Running /usr/bin/env ln -s /home/ec2-user/posterMangemnet/shared/node_modules /home/ec2-user/posterMangemnet/releases/20251017171859/node_modules as ec2-user@34.204.60.121
+ DEBUG [fb9a1139] Command: /usr/bin/env ln -s /home/ec2-user/posterMangemnet/shared/node_modules /home/ec2-user/posterMangemnet/releases/20251017171859/node_modules
+  INFO [fb9a1139] Finished in 0.409 seconds with exit status 0 (successful).
+ DEBUG [600cbd70] Running [ -L /home/ec2-user/posterMangemnet/releases/20251017171859/frontend/node_modules ] as ec2-user@34.204.60.121
+ DEBUG [600cbd70] Command: [ -L /home/ec2-user/posterMangemnet/releases/20251017171859/frontend/node_modules ]
+ DEBUG [600cbd70] Finished in 0.638 seconds with exit status 1 (failed).
+ DEBUG [3259057d] Running [ -d /home/ec2-user/posterMangemnet/releases/20251017171859/frontend/node_modules ] as ec2-user@34.204.60.121
+ DEBUG [3259057d] Command: [ -d /home/ec2-user/posterMangemnet/releases/20251017171859/frontend/node_modules ]
+ DEBUG [3259057d] Finished in 0.394 seconds with exit status 1 (failed).
+  INFO [599e6f22] Running /usr/bin/env ln -s /home/ec2-user/posterMangemnet/shared/frontend/node_modules /home/ec2-user/posterMangemnet/releases/20251017171859/frontend/node_modules as ec2-user@34.204.60.121
+ DEBUG [599e6f22] Command: /usr/bin/env ln -s /home/ec2-user/posterMangemnet/shared/frontend/node_modules /home/ec2-user/posterMangemnet/releases/20251017171859/frontend/node_modules
+  INFO [599e6f22] Finished in 0.408 seconds with exit status 0 (successful).
+  INFO [556f3d0d] Running /usr/bin/env ln -s /home/ec2-user/posterMangemnet/releases/20251017171859 /home/ec2-user/posterMangemnet/releases/current as ec2-user@34.204.60.121
+ DEBUG [556f3d0d] Command: /usr/bin/env ln -s /home/ec2-user/posterMangemnet/releases/20251017171859 /home/ec2-user/posterMangemnet/releases/current
+  INFO [556f3d0d] Finished in 0.534 seconds with exit status 0 (successful).
+  INFO [274d0e4b] Running /usr/bin/env mv /home/ec2-user/posterMangemnet/releases/current /home/ec2-user/posterMangemnet as ec2-user@34.204.60.121
+ DEBUG [274d0e4b] Command: /usr/bin/env mv /home/ec2-user/posterMangemnet/releases/current /home/ec2-user/posterMangemnet
+  INFO [274d0e4b] Finished in 0.500 seconds with exit status 0 (successful).
+ DEBUG [8937b0fc] Running /usr/bin/env ls -x /home/ec2-user/posterMangemnet/releases as ec2-user@34.204.60.121
+ DEBUG [8937b0fc] Command: /usr/bin/env ls -x /home/ec2-user/posterMangemnet/releases
+ DEBUG [8937b0fc] 	20251016160335	20251016160402	20251016160527	20251016160629	20251016161403
+20251017171859
+ DEBUG [8937b0fc] Finished in 0.558 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 34.204.60.121
+ DEBUG [e62b93da] Running [ -d /home/ec2-user/posterMangemnet/current ] as ec2-user@34.204.60.121
+ DEBUG [e62b93da] Command: [ -d /home/ec2-user/posterMangemnet/current ]
+ DEBUG [e62b93da] Finished in 0.374 seconds with exit status 0 (successful).
+ DEBUG [43320ba1] Running /usr/bin/env readlink /home/ec2-user/posterMangemnet/current as ec2-user@34.204.60.121
+ DEBUG [43320ba1] Command: /usr/bin/env readlink /home/ec2-user/posterMangemnet/current
+ DEBUG [43320ba1] 	/home/ec2-user/posterMangemnet/releases/20251017171859
+ DEBUG [43320ba1] Finished in 0.377 seconds with exit status 0 (successful).
+  INFO [39090b6e] Running /usr/bin/env rm -rf /home/ec2-user/posterMangemnet/releases/20251016160335 as ec2-user@34.204.60.121
+ DEBUG [39090b6e] Command: /usr/bin/env rm -rf /home/ec2-user/posterMangemnet/releases/20251016160335
+  INFO [39090b6e] Finished in 0.388 seconds with exit status 0 (successful).
+ DEBUG [34b164dc] Running if test ! -d /home/ec2-user/posterMangemnet/releases; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [34b164dc] Command: if test ! -d /home/ec2-user/posterMangemnet/releases; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases'" 1>&2; false; fi
+ DEBUG [34b164dc] Finished in 0.429 seconds with exit status 0 (successful).
+  INFO [44f3461a] Running /usr/bin/env echo "Branch main (at 65fe6925852b7bbea7a3aec4dba96424e86bbbb2) deployed as release 20251017171859 by vaishnavrampure" >> /home/ec2-user/posterMangemnet/revisions.log as ec2-user@34.204.60.121
+ DEBUG [44f3461a] Command: cd /home/ec2-user/posterMangemnet/releases && /usr/bin/env echo "Branch main (at 65fe6925852b7bbea7a3aec4dba96424e86bbbb2) deployed as release 20251017171859 by vaishnavrampure" >> /home/ec2-user/posterMangemnet/revisions.log
+  INFO [44f3461a] Finished in 0.519 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2025-10-17 12:29:42 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9e47993f] Running /usr/bin/env mkdir -p /tmp as ec2-user@34.204.60.121
+ DEBUG [9e47993f] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9e47993f] Finished in 1.640 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-33eba1058fe51989630f.sh 0.0%
+  INFO Uploading /tmp/git-ssh-33eba1058fe51989630f.sh 100.0%
+  INFO [2ce5b1fb] Running /usr/bin/env chmod 700 /tmp/git-ssh-33eba1058fe51989630f.sh as ec2-user@34.204.60.121
+ DEBUG [2ce5b1fb] Command: /usr/bin/env chmod 700 /tmp/git-ssh-33eba1058fe51989630f.sh
+  INFO [2ce5b1fb] Finished in 0.457 seconds with exit status 0 (successful).
+  INFO [ca28628a] Running /usr/bin/env git ls-remote https://github.com/vaishnavrampure/posterMangemnet.git HEAD as ec2-user@34.204.60.121
+ DEBUG [ca28628a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-33eba1058fe51989630f.sh" ; /usr/bin/env git ls-remote https://github.com/vaishnavrampure/posterMangemnet.git HEAD )
+ DEBUG [ca28628a] 	65fe6925852b7bbea7a3aec4dba96424e86bbbb2	HEAD
+  INFO [ca28628a] Finished in 0.457 seconds with exit status 0 (successful).
+  INFO [23eba6a5] Running /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/shared /home/ec2-user/posterMangemnet/releases as ec2-user@34.204.60.121
+ DEBUG [23eba6a5] Command: /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/shared /home/ec2-user/posterMangemnet/releases
+  INFO [23eba6a5] Finished in 0.429 seconds with exit status 0 (successful).
+  INFO [ae8de0ae] Running /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/shared/node_modules /home/ec2-user/posterMangemnet/shared/frontend/node_modules as ec2-user@34.204.60.121
+ DEBUG [ae8de0ae] Command: /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/shared/node_modules /home/ec2-user/posterMangemnet/shared/frontend/node_modules
+  INFO [ae8de0ae] Finished in 0.520 seconds with exit status 0 (successful).
+ DEBUG [bc975bc6] Running [ -f /home/ec2-user/posterMangemnet/current/REVISION ] as ec2-user@34.204.60.121
+ DEBUG [bc975bc6] Command: [ -f /home/ec2-user/posterMangemnet/current/REVISION ]
+ DEBUG [bc975bc6] Finished in 0.391 seconds with exit status 0 (successful).
+ DEBUG [3c4fcec4] Running /usr/bin/env cat /home/ec2-user/posterMangemnet/current/REVISION 2>/dev/null as ec2-user@34.204.60.121
+ DEBUG [3c4fcec4] Command: /usr/bin/env cat /home/ec2-user/posterMangemnet/current/REVISION 2>/dev/null
+ DEBUG [3c4fcec4] 	65fe6925852b7bbea7a3aec4dba96424e86bbbb2
+ DEBUG [3c4fcec4] Finished in 0.657 seconds with exit status 0 (successful).
+ DEBUG [b849049f] Running [ -f /home/ec2-user/posterMangemnet/current/REVISION_TIME ] as ec2-user@34.204.60.121
+ DEBUG [b849049f] Command: [ -f /home/ec2-user/posterMangemnet/current/REVISION_TIME ]
+ DEBUG [b849049f] Finished in 0.392 seconds with exit status 0 (successful).
+ DEBUG [c91603ee] Running /usr/bin/env cat /home/ec2-user/posterMangemnet/current/REVISION_TIME 2>/dev/null as ec2-user@34.204.60.121
+ DEBUG [c91603ee] Command: /usr/bin/env cat /home/ec2-user/posterMangemnet/current/REVISION_TIME 2>/dev/null
+ DEBUG [c91603ee] 	1760721274
+ DEBUG [c91603ee] Finished in 0.427 seconds with exit status 0 (successful).
+ DEBUG [b7933401] Running [ -f /home/ec2-user/posterMangemnet/repo/HEAD ] as ec2-user@34.204.60.121
+ DEBUG [b7933401] Command: [ -f /home/ec2-user/posterMangemnet/repo/HEAD ]
+ DEBUG [b7933401] Finished in 0.503 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ec2-user/posterMangemnet/repo
+ DEBUG [ee30469a] Running if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [ee30469a] Command: if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi
+ DEBUG [ee30469a] Finished in 0.508 seconds with exit status 0 (successful).
+  INFO [f858f020] Running /usr/bin/env git remote set-url origin https://github.com/vaishnavrampure/posterMangemnet.git as ec2-user@34.204.60.121
+ DEBUG [f858f020] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-33eba1058fe51989630f.sh" ; /usr/bin/env git remote set-url origin https://github.com/vaishnavrampure/posterMangemnet.git )
+  INFO [f858f020] Finished in 0.657 seconds with exit status 0 (successful).
+  INFO [684ba16e] Running /usr/bin/env git remote update --prune as ec2-user@34.204.60.121
+ DEBUG [684ba16e] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-33eba1058fe51989630f.sh" ; /usr/bin/env git remote update --prune )
+  INFO [684ba16e] Finished in 0.850 seconds with exit status 0 (successful).
+ DEBUG [85c28ab4] Running if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [85c28ab4] Command: if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi
+ DEBUG [85c28ab4] Finished in 0.852 seconds with exit status 0 (successful).
+  INFO [8162a929] Running /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/releases/20251017172948 as ec2-user@34.204.60.121
+ DEBUG [8162a929] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-33eba1058fe51989630f.sh" ; /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/releases/20251017172948 )
+  INFO [8162a929] Finished in 0.426 seconds with exit status 0 (successful).
+  INFO [707bb744] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ec2-user/posterMangemnet/releases/20251017172948 as ec2-user@34.204.60.121
+ DEBUG [707bb744] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-33eba1058fe51989630f.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ec2-user/posterMangemnet/releases/20251017172948 )
+  INFO [707bb744] Finished in 0.387 seconds with exit status 0 (successful).
+ DEBUG [174fe68b] Running if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [174fe68b] Command: if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi
+ DEBUG [174fe68b] Finished in 0.514 seconds with exit status 0 (successful).
+ DEBUG [f4948b7e] Running /usr/bin/env git rev-list --max-count=1 main as ec2-user@34.204.60.121
+ DEBUG [f4948b7e] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-33eba1058fe51989630f.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [f4948b7e] 	65fe6925852b7bbea7a3aec4dba96424e86bbbb2
+ DEBUG [f4948b7e] Finished in 0.396 seconds with exit status 0 (successful).
+ DEBUG [c396f3fb] Running if test ! -d /home/ec2-user/posterMangemnet/releases/20251017172948; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases/20251017172948'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [c396f3fb] Command: if test ! -d /home/ec2-user/posterMangemnet/releases/20251017172948; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases/20251017172948'" 1>&2; false; fi
+ DEBUG [c396f3fb] Finished in 0.380 seconds with exit status 0 (successful).
+  INFO [8de68746] Running /usr/bin/env echo "65fe6925852b7bbea7a3aec4dba96424e86bbbb2" > REVISION as ec2-user@34.204.60.121
+ DEBUG [8de68746] Command: cd /home/ec2-user/posterMangemnet/releases/20251017172948 && /usr/bin/env echo "65fe6925852b7bbea7a3aec4dba96424e86bbbb2" > REVISION
+  INFO [8de68746] Finished in 0.402 seconds with exit status 0 (successful).
+ DEBUG [e5985d29] Running if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [e5985d29] Command: if test ! -d /home/ec2-user/posterMangemnet/repo; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/repo'" 1>&2; false; fi
+ DEBUG [e5985d29] Finished in 0.398 seconds with exit status 0 (successful).
+ DEBUG [c7d86706] Running /usr/bin/env git --no-pager log -1 --pretty=format:"%ct" main as ec2-user@34.204.60.121
+ DEBUG [c7d86706] Command: cd /home/ec2-user/posterMangemnet/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-33eba1058fe51989630f.sh" ; /usr/bin/env git --no-pager log -1 --pretty=format:"%ct" main )
+ DEBUG [c7d86706] 	1760721274
+ DEBUG [c7d86706] Finished in 0.513 seconds with exit status 0 (successful).
+ DEBUG [d2fcd766] Running if test ! -d /home/ec2-user/posterMangemnet/releases/20251017172948; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases/20251017172948'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [d2fcd766] Command: if test ! -d /home/ec2-user/posterMangemnet/releases/20251017172948; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases/20251017172948'" 1>&2; false; fi
+ DEBUG [d2fcd766] Finished in 0.386 seconds with exit status 0 (successful).
+  INFO [3ddceb5f] Running /usr/bin/env echo "1760721274" > REVISION_TIME as ec2-user@34.204.60.121
+ DEBUG [3ddceb5f] Command: cd /home/ec2-user/posterMangemnet/releases/20251017172948 && /usr/bin/env echo "1760721274" > REVISION_TIME
+  INFO [3ddceb5f] Finished in 0.399 seconds with exit status 0 (successful).
+  INFO [b304e11f] Running /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/releases/20251017172948 /home/ec2-user/posterMangemnet/releases/20251017172948/frontend as ec2-user@34.204.60.121
+ DEBUG [b304e11f] Command: /usr/bin/env mkdir -p /home/ec2-user/posterMangemnet/releases/20251017172948 /home/ec2-user/posterMangemnet/releases/20251017172948/frontend
+  INFO [b304e11f] Finished in 0.374 seconds with exit status 0 (successful).
+ DEBUG [219a8f8d] Running [ -L /home/ec2-user/posterMangemnet/releases/20251017172948/node_modules ] as ec2-user@34.204.60.121
+ DEBUG [219a8f8d] Command: [ -L /home/ec2-user/posterMangemnet/releases/20251017172948/node_modules ]
+ DEBUG [219a8f8d] Finished in 0.429 seconds with exit status 1 (failed).
+ DEBUG [d31a647d] Running [ -d /home/ec2-user/posterMangemnet/releases/20251017172948/node_modules ] as ec2-user@34.204.60.121
+ DEBUG [d31a647d] Command: [ -d /home/ec2-user/posterMangemnet/releases/20251017172948/node_modules ]
+ DEBUG [d31a647d] Finished in 0.528 seconds with exit status 1 (failed).
+  INFO [8ead3f02] Running /usr/bin/env ln -s /home/ec2-user/posterMangemnet/shared/node_modules /home/ec2-user/posterMangemnet/releases/20251017172948/node_modules as ec2-user@34.204.60.121
+ DEBUG [8ead3f02] Command: /usr/bin/env ln -s /home/ec2-user/posterMangemnet/shared/node_modules /home/ec2-user/posterMangemnet/releases/20251017172948/node_modules
+  INFO [8ead3f02] Finished in 0.362 seconds with exit status 0 (successful).
+ DEBUG [552ddae2] Running [ -L /home/ec2-user/posterMangemnet/releases/20251017172948/frontend/node_modules ] as ec2-user@34.204.60.121
+ DEBUG [552ddae2] Command: [ -L /home/ec2-user/posterMangemnet/releases/20251017172948/frontend/node_modules ]
+ DEBUG [552ddae2] Finished in 0.382 seconds with exit status 1 (failed).
+ DEBUG [4e2186b1] Running [ -d /home/ec2-user/posterMangemnet/releases/20251017172948/frontend/node_modules ] as ec2-user@34.204.60.121
+ DEBUG [4e2186b1] Command: [ -d /home/ec2-user/posterMangemnet/releases/20251017172948/frontend/node_modules ]
+ DEBUG [4e2186b1] Finished in 0.393 seconds with exit status 1 (failed).
+  INFO [d485aa70] Running /usr/bin/env ln -s /home/ec2-user/posterMangemnet/shared/frontend/node_modules /home/ec2-user/posterMangemnet/releases/20251017172948/frontend/node_modules as ec2-user@34.204.60.121
+ DEBUG [d485aa70] Command: /usr/bin/env ln -s /home/ec2-user/posterMangemnet/shared/frontend/node_modules /home/ec2-user/posterMangemnet/releases/20251017172948/frontend/node_modules
+  INFO [d485aa70] Finished in 0.434 seconds with exit status 0 (successful).
+  INFO [42598db5] Running /usr/bin/env ln -s /home/ec2-user/posterMangemnet/releases/20251017172948 /home/ec2-user/posterMangemnet/releases/current as ec2-user@34.204.60.121
+ DEBUG [42598db5] Command: /usr/bin/env ln -s /home/ec2-user/posterMangemnet/releases/20251017172948 /home/ec2-user/posterMangemnet/releases/current
+  INFO [42598db5] Finished in 0.514 seconds with exit status 0 (successful).
+  INFO [ff772ab4] Running /usr/bin/env mv /home/ec2-user/posterMangemnet/releases/current /home/ec2-user/posterMangemnet as ec2-user@34.204.60.121
+ DEBUG [ff772ab4] Command: /usr/bin/env mv /home/ec2-user/posterMangemnet/releases/current /home/ec2-user/posterMangemnet
+  INFO [ff772ab4] Finished in 0.425 seconds with exit status 0 (successful).
+ DEBUG [9749a3bf] Running /usr/bin/env ls -x /home/ec2-user/posterMangemnet/releases as ec2-user@34.204.60.121
+ DEBUG [9749a3bf] Command: /usr/bin/env ls -x /home/ec2-user/posterMangemnet/releases
+ DEBUG [9749a3bf] 	20251016160402	20251016160527	20251016160629	20251016161403	20251017171859
+20251017172948
+ DEBUG [9749a3bf] Finished in 0.621 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 34.204.60.121
+ DEBUG [667c6cc7] Running [ -d /home/ec2-user/posterMangemnet/current ] as ec2-user@34.204.60.121
+ DEBUG [667c6cc7] Command: [ -d /home/ec2-user/posterMangemnet/current ]
+ DEBUG [667c6cc7] Finished in 0.533 seconds with exit status 0 (successful).
+ DEBUG [81876d92] Running /usr/bin/env readlink /home/ec2-user/posterMangemnet/current as ec2-user@34.204.60.121
+ DEBUG [81876d92] Command: /usr/bin/env readlink /home/ec2-user/posterMangemnet/current
+ DEBUG [81876d92] 	/home/ec2-user/posterMangemnet/releases/20251017172948
+ DEBUG [81876d92] Finished in 1.664 seconds with exit status 0 (successful).
+  INFO [1f5e80f6] Running /usr/bin/env rm -rf /home/ec2-user/posterMangemnet/releases/20251016160402 as ec2-user@34.204.60.121
+ DEBUG [1f5e80f6] Command: /usr/bin/env rm -rf /home/ec2-user/posterMangemnet/releases/20251016160402
+  INFO [1f5e80f6] Finished in 0.785 seconds with exit status 0 (successful).
+ DEBUG [8f14ead1] Running if test ! -d /home/ec2-user/posterMangemnet/releases; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases'" 1>&2; false; fi as ec2-user@34.204.60.121
+ DEBUG [8f14ead1] Command: if test ! -d /home/ec2-user/posterMangemnet/releases; then echo "Directory does not exist '/home/ec2-user/posterMangemnet/releases'" 1>&2; false; fi
+ DEBUG [8f14ead1] Finished in 0.481 seconds with exit status 0 (successful).
+  INFO [3c5e8c4c] Running /usr/bin/env echo "Branch main (at 65fe6925852b7bbea7a3aec4dba96424e86bbbb2) deployed as release 20251017172948 by vaishnavrampure" >> /home/ec2-user/posterMangemnet/revisions.log as ec2-user@34.204.60.121
+ DEBUG [3c5e8c4c] Command: cd /home/ec2-user/posterMangemnet/releases && /usr/bin/env echo "Branch main (at 65fe6925852b7bbea7a3aec4dba96424e86bbbb2) deployed as release 20251017172948 by vaishnavrampure" >> /home/ec2-user/posterMangemnet/revisions.log
+  INFO [3c5e8c4c] Finished in 0.495 seconds with exit status 0 (successful).

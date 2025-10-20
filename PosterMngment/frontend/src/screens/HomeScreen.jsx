@@ -51,7 +51,6 @@ const HomeScreen = () => {
           <Col md={8}>
             <h1 style={styles.welcomeHeader}>Welcome to PosterPulse</h1>
             <Link to="/login">Login</Link> or <Link to="/signup">Sign up</Link>
-            <p>Hello world</p>
           </Col>
         </Row>
       )}

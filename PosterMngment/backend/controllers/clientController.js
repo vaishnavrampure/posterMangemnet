@@ -47,9 +47,6 @@ export const getClientById = async (req, res) => {
 export const updateClient = async (req, res) => {
     const { id } = req.params;
     const { name, active, contactInfo, address, size} = req.body;
-
-  //  console.log(req.body)
-
     try {
         const client = await Client.findById(id);
         if (!client) {

@@ -77,9 +77,7 @@ export const generateReport = async (campaign) => {
                         } else {
                             xPos += imageWidth + horizontalSpacing;
                         }
-                    } else {
-                        console.log(`Skipping file ${img.imageName} due to unsupported file type: ${ext}`);
-                    }
+                    } 
                 }
             } catch (error) {
                 console.error("Error adding image to PDF:", error);

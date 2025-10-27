@@ -89,9 +89,8 @@ export const getCampaignById = async (req, res) => {
 // PUT: Update a campaign
 export const updateCampaign = async (req, res) => {
     const { id } = req.params;
-    const { name, status, images, lastModifiedBy, assignedContractors, clientName, active, city, neighborhood, postersOrContacts, type, quotedRate} = req.body;  // Include active in the destructuring
+        const { name, status, images, lastModifiedBy, assignedContractors, clientName, active, city, neighborhood, postersOrContacts, type, quotedRate} = req.body;  // Include active in the destructuring
 
-    console.log(req.body)
 
     // Validate required fields
     if (clientName === undefined || clientName === null) {

@@ -5,7 +5,6 @@ const setupRoutes = express.Router();
 
 setupRoutes.post('/', async (req, res) => {
   try {
-    //console.log('Request Body:', req.body); 
     const userConfig = req.body;
     const result = await setupRolesAndPermissions(userConfig);
     res.status(201).json(result);

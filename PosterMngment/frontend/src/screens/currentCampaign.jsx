@@ -81,9 +81,7 @@ const CurrentCampaigns = () => {
         if (!response.ok) {
             throw new Error('Failed to download report');
         }
-        console.log(response)
         const blob = await response.blob(); // Convert response to blob
-        console.log(blob);
         const url = window.URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;

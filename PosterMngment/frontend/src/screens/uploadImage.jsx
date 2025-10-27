@@ -8,7 +8,6 @@ const UploadImage = () => {
   const [selectedCampaignId, setSelectedCampaignId] = useState('');
   const { userInfo } = useSelector((state) => state.auth);
   const [campaigns, setCampaigns] = useState([]);
-  console.log(campaigns);
 
   useEffect(() => {
     if (userInfo) {
@@ -64,7 +63,6 @@ const UploadImage = () => {
         body: formData,
         credentials: 'include'
       });
-      console.log(response); 
       if (!response.ok) {
         throw new Error('Failed to upload image');
       }

@@ -44,7 +44,6 @@ const CampaignCreationScreen = () => {
           throw new Error(`Failed to fetch contractors: ${response.status} - ${response.statusText}`);
         }
         const data = await response.json();
-        console.log(data)
         const filteredContractors = data.filter(user => user.roles.some(role => role.includes('Contractor')));
         setContractors(filteredContractors);
       } catch (error) {

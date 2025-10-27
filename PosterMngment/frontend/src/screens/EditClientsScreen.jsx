@@ -78,8 +78,6 @@ const EditClientScreen = () => {
       },
       size: size,
     };
-    console.log("updated", updatedClient);
-
     try {
       const response = await fetch(`http://localhost:5000/api/clients/${id}`, {
         method: 'PUT',

@@ -27,3 +27,16 @@ set :ssh_options, {
   auth_methods: %w(publickey),
   keys: %w(~/.ssh/poster_mangement.pem)
 }
+
+namespace :npm do
+  desc 'Install dependencies and build frontend'
+  task :build do
+    on roles(:app) do
+      within "#{release_path}/PosterMngment" do
+        execute :npm, "install --prefix backend"
+        execute :npm, "install --prefix frontend"
+        execute :npm, "run build --prefix frontend"
+      end
+    end
+  end
+end

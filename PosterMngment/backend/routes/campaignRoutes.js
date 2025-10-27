@@ -46,9 +46,7 @@ campaignRoutes.get('/role', protect,  checkPermissions(['manage_campaigns', 'vie
 campaignRoutes.get('/:id', protect, checkPermissions(['view_all_campaigns', 'view_contractor_campaigns', 'view_client_campaigns']), getCampaignById);
 campaignRoutes.get('/:id/report', async (req, res) => {
     try {
-        console.log(req.params.id)
         const campaign = await Campaign.findById(req.params.id);
-        console.log(campaign);
         if (!campaign) {
             return res.status(404).json({ message: 'Campaign not found' });
         }

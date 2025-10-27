@@ -23,8 +23,6 @@ const resizeAndSaveImage = async (file, sizes, timestamp) => {
   await Promise.all(sizes.map(async size => {
     const outputFilename = `${timestamp}-${size.suffix}-${file.originalname}`
     const outputPath = path.join('uploads', outputFilename);
-    
-    console.log(`Saving resized image: ${outputFilename}`);
     await sharp(file.path)
       .resize(size.width, size.height)
       .toFile(outputPath);

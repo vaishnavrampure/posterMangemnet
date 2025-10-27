@@ -4,8 +4,6 @@ export const checkPermissions = (requiredPermissions) => {
     const hasPermission = requiredPermissions.some(permission =>
       userPermissions.includes(permission)
     );
-    console.log(hasPermission);
-
     if (hasPermission) {
       return next();
     } else {
